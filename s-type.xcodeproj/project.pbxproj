@@ -6,9 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		74FFDDA72F39CC3D0067C958 /* s-type-keybaord.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 74FFDDA02F39CC3D0067C958 /* s-type-keybaord.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74FFDDA52F39CC3D0067C958 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74FFDD862F39C9CA0067C958 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74FFDD9F2F39CC3D0067C958;
+			remoteInfo = "s-type-keybaord";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74FFDDAC2F39CC3D0067C958 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74FFDDA72F39CC3D0067C958 /* s-type-keybaord.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		74FFDD8E2F39C9CA0067C958 /* s-type.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "s-type.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74FFDDA02F39CC3D0067C958 /* s-type-keybaord.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "s-type-keybaord.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		74FFDDA82F39CC3D0067C958 /* Exceptions for "s-type-keybaord" folder in "s-type-keybaord" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 74FFDD9F2F39CC3D0067C958 /* s-type-keybaord */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		74FFDD902F39C9CA0067C958 /* s-type */ = {
@@ -16,10 +55,25 @@
 			path = "s-type";
 			sourceTree = "<group>";
 		};
+		74FFDDA12F39CC3D0067C958 /* s-type-keybaord */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				74FFDDA82F39CC3D0067C958 /* Exceptions for "s-type-keybaord" folder in "s-type-keybaord" target */,
+			);
+			path = "s-type-keybaord";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74FFDD8B2F39C9CA0067C958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74FFDD9D2F39CC3D0067C958 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				74FFDD902F39C9CA0067C958 /* s-type */,
+				74FFDDA12F39CC3D0067C958 /* s-type-keybaord */,
 				74FFDD8F2F39C9CA0067C958 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				74FFDD8E2F39C9CA0067C958 /* s-type.app */,
+				74FFDDA02F39CC3D0067C958 /* s-type-keybaord.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				74FFDD8A2F39C9CA0067C958 /* Sources */,
 				74FFDD8B2F39C9CA0067C958 /* Frameworks */,
 				74FFDD8C2F39C9CA0067C958 /* Resources */,
+				74FFDDAC2F39CC3D0067C958 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				74FFDDA62F39CC3D0067C958 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				74FFDD902F39C9CA0067C958 /* s-type */,
@@ -69,6 +127,28 @@
 			productName = "s-type";
 			productReference = 74FFDD8E2F39C9CA0067C958 /* s-type.app */;
 			productType = "com.apple.product-type.application";
+		};
+		74FFDD9F2F39CC3D0067C958 /* s-type-keybaord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74FFDDA92F39CC3D0067C958 /* Build configuration list for PBXNativeTarget "s-type-keybaord" */;
+			buildPhases = (
+				74FFDD9C2F39CC3D0067C958 /* Sources */,
+				74FFDD9D2F39CC3D0067C958 /* Frameworks */,
+				74FFDD9E2F39CC3D0067C958 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				74FFDDA12F39CC3D0067C958 /* s-type-keybaord */,
+			);
+			name = "s-type-keybaord";
+			packageProductDependencies = (
+			);
+			productName = "s-type-keybaord";
+			productReference = 74FFDDA02F39CC3D0067C958 /* s-type-keybaord.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					74FFDD8D2F39C9CA0067C958 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					74FFDD9F2F39CC3D0067C958 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				74FFDD8D2F39C9CA0067C958 /* s-type */,
+				74FFDD9F2F39CC3D0067C958 /* s-type-keybaord */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		74FFDD8C2F39C9CA0067C958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74FFDD9E2F39CC3D0067C958 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74FFDD9C2F39CC3D0067C958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74FFDDA62F39CC3D0067C958 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74FFDD9F2F39CC3D0067C958 /* s-type-keybaord */;
+			targetProxy = 74FFDDA52F39CC3D0067C958 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		74FFDD972F39C9CB0067C958 /* Debug */ = {
@@ -249,8 +355,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "s-type/s-type.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z78RY57YHH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -280,8 +388,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "s-type/s-type.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z78RY57YHH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -306,6 +416,64 @@
 			};
 			name = Release;
 		};
+		74FFDDAA2F39CC3D0067C958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "s-type-keybaord/s-type-keybaord.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z78RY57YHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "s-type-keybaord/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "s-type-keybaord";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nixxie.s-type.s-type-keybaord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74FFDDAB2F39CC3D0067C958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "s-type-keybaord/s-type-keybaord.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z78RY57YHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "s-type-keybaord/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "s-type-keybaord";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nixxie.s-type.s-type-keybaord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +491,15 @@
 			buildConfigurations = (
 				74FFDD9A2F39C9CB0067C958 /* Debug */,
 				74FFDD9B2F39C9CB0067C958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74FFDDA92F39CC3D0067C958 /* Build configuration list for PBXNativeTarget "s-type-keybaord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74FFDDAA2F39CC3D0067C958 /* Debug */,
+				74FFDDAB2F39CC3D0067C958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
