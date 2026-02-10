@@ -147,7 +147,22 @@ class KeyboardViewController: UIInputViewController {
         emojiCollectionView.translatesAutoresizingMaskIntoConstraints = false
 
         stack.addArrangedSubview(emojiCollectionView)
-        emojiCollectionView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+
+        // Bottom row
+        let bottomRow = UIStackView()
+        bottomRow.axis = .horizontal
+        bottomRow.spacing = 6
+        bottomRow.distribution = .fill
+
+        let abcButton = createKeyButton(for: "ABC")
+        let spaceButton = createKeyButton(for: "Space")
+        let deleteButton = createKeyButton(for: "Delete")
+
+        bottomRow.addArrangedSubview(abcButton)
+        bottomRow.addArrangedSubview(spaceButton)
+        bottomRow.addArrangedSubview(deleteButton)
+        abcButton.widthAnchor.constraint(equalTo: deleteButton.widthAnchor).isActive = true
+        stack.addArrangedSubview(bottomRow)
     }
 
     // MARK: - Create Key Button
@@ -200,9 +215,13 @@ class KeyboardViewController: UIInputViewController {
         case "Shift":
             handleShiftTap()
         case "?123", "ABC":
-            isNumbersLayout.toggle()
-            isSymbolsLayout = false
-            isEmojiLayout = false
+            if isEmojiLayout {
+                isEmojiLayout = false
+                isNumbersLayout = false
+            } else {
+                isNumbersLayout.toggle()
+            }
+            isSymbolsLayout = false // Always reset symbols when switching to/from numbers/letters
             isShiftEnabled = false
             isCapsLockEnabled = false
             setupKeyboard()
