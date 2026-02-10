@@ -147,6 +147,7 @@ class KeyboardViewController: UIInputViewController {
         emojiCollectionView.translatesAutoresizingMaskIntoConstraints = false
 
         stack.addArrangedSubview(emojiCollectionView)
+        emojiCollectionView.heightAnchor.constraint(equalToConstant: 200).isActive = true
 
         // Bottom row
         let bottomRow = UIStackView()
