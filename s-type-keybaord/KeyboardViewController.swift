@@ -169,20 +169,28 @@ class KeyboardViewController: UIInputViewController {
     // MARK: - Create Key Button
     private func createKeyButton(for key: String) -> UIButton {
         let button = UIButton(type: .system)
-        button.setTitle(applyShift(to: key), for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 18)
         button.layer.cornerRadius = 6
         button.backgroundColor = .secondarySystemBackground
         button.setTitleColor(.label, for: .normal)
+        button.tintColor = .label
+
+        if key == "Shift" {
+            let iconName = isCapsLockEnabled ? "capslock.fill" : "arrow.up"
+            let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
+            button.setImage(UIImage(systemName: iconName, withConfiguration: config), for: .normal)
+        } else {
+            button.setTitle(applyShift(to: key), for: .normal)
+        }
 
         // Shift / Caps Lock visuals
         if key == "Shift" {
             if isCapsLockEnabled {
                 button.backgroundColor = .systemBlue
-                button.setTitleColor(.white, for: .normal)
+                button.tintColor = .white
             } else if isShiftEnabled {
                 button.backgroundColor = .lightGray
-                button.setTitleColor(.black, for: .normal)
+                button.tintColor = .black
             }
         }
 
