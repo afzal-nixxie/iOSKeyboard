@@ -1,0 +1,22 @@
+
+Showing Recent Issues
+
+Build target s-type of project supreme-typer with configuration Debug
+
+ProcessProductPackaging /Users/afzal/Documents/nixxie/iOSKeyboard/s-type/s-type.entitlements /Users/afzal/Library/Developer/Xcode/DerivedData/supreme-typer-gnjmnhcbaezfopfsebfpbbhxjnny/Build/Intermediates.noindex/supreme-typer.build/Debug-iphonesimulator/s-type.build/s-type.app.xcent (in target 's-type' from project 'supreme-typer')
+    cd /Users/afzal/Documents/nixxie/iOSKeyboard
+    
+    Entitlements:
+    
+    {
+}
+    
+    builtin-productPackagingUtility /Users/afzal/Documents/nixxie/iOSKeyboard/s-type/s-type.entitlements -entitlements -format xml -o /Users/afzal/Library/Developer/Xcode/DerivedData/supreme-typer-gnjmnhcbaezfopfsebfpbbhxjnny/Build/Intermediates.noindex/supreme-typer.build/Debug-iphonesimulator/s-type.build/s-type.app.xcent
+
+error: Build input file cannot be found: '/Users/afzal/Documents/nixxie/iOSKeyboard/s-type/s-type.entitlements'. Did you forget to declare this file as an output of a script phase or custom build rule which produces it? (in target 's-type' from project 'supreme-typer')
+
+Build input file cannot be found: '/Users/afzal/Documents/nixxie/iOSKeyboard/s-type/s-type.entitlements'. Did you forget to declare this file as an output of a script phase or custom build rule which produces it?
+
+
+
+Build failed    13/02/26, 11:40 AM    1.9 seconds

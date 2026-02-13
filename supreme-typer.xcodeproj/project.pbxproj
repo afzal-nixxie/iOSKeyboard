@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74160F392F3F08F500B8A4F2 /* s_typeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F362F3F08F500B8A4F2 /* s_typeApp.swift */; };
+		74160F3A2F3F08F500B8A4F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F352F3F08F500B8A4F2 /* ContentView.swift */; };
+		74160F3B2F3F08F500B8A4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74160F342F3F08F500B8A4F2 /* Assets.xcassets */; };
+		74160F492F3F090C00B8A4F2 /* emojis.json in Resources */ = {isa = PBXBuildFile; fileRef = 74160F422F3F090C00B8A4F2 /* emojis.json */; };
+		74160F4A2F3F090C00B8A4F2 /* EmojiCategoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F3D2F3F090C00B8A4F2 /* EmojiCategoryBar.swift */; };
+		74160F4B2F3F090C00B8A4F2 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F3E2F3F090C00B8A4F2 /* EmojiCell.swift */; };
+		74160F4C2F3F090C00B8A4F2 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F3C2F3F090C00B8A4F2 /* Emoji.swift */; };
+		74160F4D2F3F090C00B8A4F2 /* EmojiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F402F3F090C00B8A4F2 /* EmojiManager.swift */; };
+		74160F4E2F3F090C00B8A4F2 /* EmojiCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F3F2F3F090C00B8A4F2 /* EmojiCollectionView.swift */; };
+		74160F4F2F3F090C00B8A4F2 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74160F452F3F090C00B8A4F2 /* KeyboardViewController.swift */; };
 		74FFDDA72F39CC3D0067C958 /* s-type-keybaord.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 74FFDDA02F39CC3D0067C958 /* s-type-keybaord.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,35 +45,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		74160F342F3F08F500B8A4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74160F352F3F08F500B8A4F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74160F362F3F08F500B8A4F2 /* s_typeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s_typeApp.swift; sourceTree = "<group>"; };
+		74160F372F3F08F500B8A4F2 /* s-type.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "s-type.entitlements"; sourceTree = "<group>"; };
+		74160F3C2F3F090C00B8A4F2 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		74160F3D2F3F090C00B8A4F2 /* EmojiCategoryBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryBar.swift; sourceTree = "<group>"; };
+		74160F3E2F3F090C00B8A4F2 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
+		74160F3F2F3F090C00B8A4F2 /* EmojiCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionView.swift; sourceTree = "<group>"; };
+		74160F402F3F090C00B8A4F2 /* EmojiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiManager.swift; sourceTree = "<group>"; };
+		74160F422F3F090C00B8A4F2 /* emojis.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = emojis.json; sourceTree = "<group>"; };
+		74160F442F3F090C00B8A4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74160F452F3F090C00B8A4F2 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		74160F462F3F090C00B8A4F2 /* s-type-keybaord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "s-type-keybaord.entitlements"; sourceTree = "<group>"; };
+		74160F532F3F094C00B8A4F2 /* supreme-typer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "supreme-typer.xcodeproj"; sourceTree = "<group>"; };
 		74FFDD8E2F39C9CA0067C958 /* s-type.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "s-type.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FFDDA02F39CC3D0067C958 /* s-type-keybaord.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "s-type-keybaord.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		74FFDDA82F39CC3D0067C958 /* Exceptions for "s-type-keybaord" folder in "s-type-keybaord" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 74FFDD9F2F39CC3D0067C958 /* s-type-keybaord */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		74FFDD902F39C9CA0067C958 /* s-type */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "s-type";
-			sourceTree = "<group>";
-		};
-		74FFDDA12F39CC3D0067C958 /* s-type-keybaord */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				74FFDDA82F39CC3D0067C958 /* Exceptions for "s-type-keybaord" folder in "s-type-keybaord" target */,
-			);
-			path = "s-type-keybaord";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74FFDD8B2F39C9CA0067C958 /* Frameworks */ = {
@@ -83,11 +81,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74160F382F3F08F500B8A4F2 /* supreme-typer */ = {
+			isa = PBXGroup;
+			children = (
+				74160F342F3F08F500B8A4F2 /* Assets.xcassets */,
+				74160F352F3F08F500B8A4F2 /* ContentView.swift */,
+				74160F362F3F08F500B8A4F2 /* s_typeApp.swift */,
+				74160F372F3F08F500B8A4F2 /* s-type.entitlements */,
+			);
+			path = "supreme-typer";
+			sourceTree = "<group>";
+		};
+		74160F412F3F090C00B8A4F2 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				74160F3C2F3F090C00B8A4F2 /* Emoji.swift */,
+				74160F3D2F3F090C00B8A4F2 /* EmojiCategoryBar.swift */,
+				74160F3E2F3F090C00B8A4F2 /* EmojiCell.swift */,
+				74160F3F2F3F090C00B8A4F2 /* EmojiCollectionView.swift */,
+				74160F402F3F090C00B8A4F2 /* EmojiManager.swift */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		74160F432F3F090C00B8A4F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74160F422F3F090C00B8A4F2 /* emojis.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74160F472F3F090C00B8A4F2 /* supreme-typer-keybaord */ = {
+			isa = PBXGroup;
+			children = (
+				74160F412F3F090C00B8A4F2 /* Emoji */,
+				74160F432F3F090C00B8A4F2 /* Resources */,
+				74160F442F3F090C00B8A4F2 /* Info.plist */,
+				74160F452F3F090C00B8A4F2 /* KeyboardViewController.swift */,
+				74160F462F3F090C00B8A4F2 /* s-type-keybaord.entitlements */,
+			);
+			path = "supreme-typer-keybaord";
+			sourceTree = "<group>";
+		};
+		74160F542F3F094C00B8A4F2 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		74FFDD852F39C9CA0067C958 = {
 			isa = PBXGroup;
 			children = (
-				74FFDD902F39C9CA0067C958 /* s-type */,
-				74FFDDA12F39CC3D0067C958 /* s-type-keybaord */,
+				74160F532F3F094C00B8A4F2 /* supreme-typer.xcodeproj */,
+				74160F472F3F090C00B8A4F2 /* supreme-typer-keybaord */,
+				74160F382F3F08F500B8A4F2 /* supreme-typer */,
 				74FFDD8F2F39C9CA0067C958 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,9 +165,6 @@
 			dependencies = (
 				74FFDDA62F39CC3D0067C958 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				74FFDD902F39C9CA0067C958 /* s-type */,
-			);
 			name = "s-type";
 			packageProductDependencies = (
 			);
@@ -139,9 +183,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				74FFDDA12F39CC3D0067C958 /* s-type-keybaord */,
 			);
 			name = "s-type-keybaord";
 			packageProductDependencies = (
@@ -168,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 74FFDD892F39C9CA0067C958 /* Build configuration list for PBXProject "s-type" */;
+			buildConfigurationList = 74FFDD892F39C9CA0067C958 /* Build configuration list for PBXProject "supreme-typer" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -180,6 +221,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 74FFDD8F2F39C9CA0067C958 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 74160F542F3F094C00B8A4F2 /* Products */;
+					ProjectRef = 74160F532F3F094C00B8A4F2 /* supreme-typer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				74FFDD8D2F39C9CA0067C958 /* s-type */,
@@ -193,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74160F3B2F3F08F500B8A4F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74160F492F3F090C00B8A4F2 /* emojis.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74160F392F3F08F500B8A4F2 /* s_typeApp.swift in Sources */,
+				74160F3A2F3F08F500B8A4F2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74160F4A2F3F090C00B8A4F2 /* EmojiCategoryBar.swift in Sources */,
+				74160F4B2F3F090C00B8A4F2 /* EmojiCell.swift in Sources */,
+				74160F4C2F3F090C00B8A4F2 /* Emoji.swift in Sources */,
+				74160F4D2F3F090C00B8A4F2 /* EmojiManager.swift in Sources */,
+				74160F4E2F3F090C00B8A4F2 /* EmojiCollectionView.swift in Sources */,
+				74160F4F2F3F090C00B8A4F2 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +412,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "s-type/s-type.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "supreme-typer/s-type.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z78RY57YHH;
@@ -388,7 +446,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "s-type/s-type.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "supreme-typer/s-type.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z78RY57YHH;
@@ -419,12 +478,12 @@
 		74FFDDAA2F39CC3D0067C958 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "s-type-keybaord/s-type-keybaord.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z78RY57YHH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "s-type-keybaord/Info.plist";
+				INFOPLIST_FILE = "supreme-typer-keybaord/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "s-type-keybaord";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,12 +507,12 @@
 		74FFDDAB2F39CC3D0067C958 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "s-type-keybaord/s-type-keybaord.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z78RY57YHH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "s-type-keybaord/Info.plist";
+				INFOPLIST_FILE = "supreme-typer-keybaord/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "s-type-keybaord";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74FFDD892F39C9CA0067C958 /* Build configuration list for PBXProject "s-type" */ = {
+		74FFDD892F39C9CA0067C958 /* Build configuration list for PBXProject "supreme-typer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74FFDD972F39C9CB0067C958 /* Debug */,
